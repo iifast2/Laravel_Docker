@@ -53,10 +53,13 @@ docker-compose up -d
 
 <br/><br/><br/><br/>
 
-### issue 1 - composer (laravel) - fruitcacke : 
 
-````
 
+<details>
+<summary>issue 1 - composer (laravel) - fruitcacke </summary>
+<br>
+
+```
 
 medaminebentaieb@MacBook-Pro-Med Laravel_Docker % pwd 
 /Users/medaminebentaieb/Docker_files/Laravel_Docker
@@ -365,3 +368,7 @@ medaminebentaieb@MacBook-Pro-Med Laravel_Docker %
 medaminebentaieb@MacBook-Pro-Med Laravel_Docker % 
 
 ```
+
+</details>
+ 
+
