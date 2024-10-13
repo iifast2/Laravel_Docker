@@ -56,7 +56,7 @@ docker-compose up -d
 
 
 <details>
-<summary>issue 1 - composer (laravel) - fruitcacke </summary>
+<summary><h2> issue 1 - composer (laravel) - fruitcacke <h2/> </summary>
 <br>
 
 ```
@@ -370,5 +370,181 @@ medaminebentaieb@MacBook-Pro-Med Laravel_Docker %
 ```
 
 </details>
+
+
+<br/>
+
+---
+
+<br/><br/><br/><br/>
+
+
+
+
+
+
+ <details>
+<summary><h2> Issue 2 ( `phpmyadmin The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested`  ) <h2/></summary>
+<br>
  
+```
+ medaminebentaieb@MacBook-Pro-Med Laravel_Docker % 
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % cd /Users/medaminebentaieb/Docker_files/Laravel_Docker
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % docker-compose build --no-cache
+[+] Building 32.5s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 32.7s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 32.8s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 33.0s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 33.1s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 33.3s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 33.4s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 33.6s (9/16)                                                                                                                                                          docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                       0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                               0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                             1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                         1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                            0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                          0.0s
+ => => transferring context: 2B                                                                                                                                                                    0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                        0.0s
+[+] Building 439.7s (29/29) FINISHED                                                                                                                                                    docker:desktop-linux
+ => [laravel internal] load build definition from Dockerfile                                                                                                                                            0.0s
+ => => transferring dockerfile: 988B                                                                                                                                                                    0.0s
+ => [laravel internal] load metadata for docker.io/library/php:8.2-fpm                                                                                                                                  1.2s
+ => [laravel internal] load metadata for docker.io/library/composer:latest                                                                                                                              1.2s
+ => [laravel auth] library/php:pull token for registry-1.docker.io                                                                                                                                      0.0s
+ => [laravel auth] library/composer:pull token for registry-1.docker.io                                                                                                                                 0.0s
+ => [laravel internal] load .dockerignore                                                                                                                                                               0.0s
+ => => transferring context: 2B                                                                                                                                                                         0.0s
+ => CACHED [laravel stage-0 1/8] FROM docker.io/library/php:8.2-fpm@sha256:44323764bd7ff0a64acf1e8d162315b5188e7917959eec1b8d5d7c726fad1558                                                             0.0s
+ => CACHED [laravel] FROM docker.io/library/composer:latest@sha256:a9b32ddde7df8f87b714fe6e833d601014abb02e2c02e68d7d0405e3ce423cc3                                                                     0.0s
+ => [laravel internal] load build context                                                                                                                                                               0.0s
+ => => transferring context: 26.77kB                                                                                                                                                                    0.0s
+ => [laravel stage-0 2/8] RUN apt-get update && apt-get install -y     build-essential     libpng-dev     libonig-dev     libxml2-dev     zip     unzip     git     supervisor     && docker-php-ext  133.6s
+ => [laravel stage-0 3/8] COPY --from=composer:latest /usr/bin/composer /usr/bin/composer                                                                                                               0.0s 
+ => [laravel stage-0 4/8] WORKDIR /var/www                                                                                                                                                              0.0s 
+ => [laravel stage-0 5/8] COPY src/ /var/www                                                                                                                                                            0.0s 
+ => [laravel stage-0 6/8] RUN composer install --optimize-autoloader --no-dev                                                                                                                         251.1s 
+ => [laravel stage-0 7/8] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf                                                                                                                 0.0s 
+ => [laravel stage-0 8/8] RUN chown -R www-data:www-data /var/www                                                                                                                                       4.0s 
+ => [laravel] exporting to image                                                                                                                                                                        0.4s 
+ => => exporting layers                                                                                                                                                                                 0.4s 
+ => => writing image sha256:558a424d0d5cc4947ec3971351e027bea0499c64ce01097e870f274ca45c1de5                                                                                                            0.0s 
+ => => naming to docker.io/library/laravel_docker-laravel                                                                                                                                               0.0s 
+ => [laravel] resolving provenance for metadata file                                                                                                                                                    0.0s
+ => [nginx internal] load build definition from Dockerfile                                                                                                                                              0.0s
+ => => transferring dockerfile: 536B                                                                                                                                                                    0.0s
+ => [nginx internal] load metadata for docker.io/library/nginx:latest                                                                                                                                   1.8s
+ => [nginx auth] library/nginx:pull token for registry-1.docker.io                                                                                                                                      0.0s
+ => [nginx internal] load .dockerignore                                                                                                                                                                 0.0s
+ => => transferring context: 2B                                                                                                                                                                         0.0s
+ => [nginx 1/4] FROM docker.io/library/nginx:latest@sha256:d2eb56950b84efe34f966a2b92efb1a1a2ea53e7e93b94cdf45a27cf3cd47fc0                                                                             5.1s
+ => => resolve docker.io/library/nginx:latest@sha256:d2eb56950b84efe34f966a2b92efb1a1a2ea53e7e93b94cdf45a27cf3cd47fc0                                                                                   0.0s
+ => => sha256:783efa7200714b88d9642a0b17a3c1b100033df3b8873ec214b388360ec3c8f2 629B / 629B                                                                                                              0.8s
+ => => sha256:e9346e20ffd27cbb75c776445a5d69b2624e840e40733b3b7e2f4ab2f2094287 954B / 954B                                                                                                              0.2s
+ => => sha256:d2eb56950b84efe34f966a2b92efb1a1a2ea53e7e93b94cdf45a27cf3cd47fc0 10.27kB / 10.27kB                                                                                                        0.0s
+ => => sha256:96c43ba316370e0c1d1810b9693e647cc62a172a842d77888c299f3944922491 2.30kB / 2.30kB                                                                                                          0.0s
+ => => sha256:048e09038596626fc38392bfd1b77ac8d5a0d6d0183b513290307d4451bc44b9 8.75kB / 8.75kB                                                                                                          0.0s
+ => => sha256:c62fa01086040cd1f46a1cca2e6d9757c0516e5076b0c47cb8f599f8047a920f 40.42MB / 40.42MB                                                                                                        4.5s
+ => => sha256:e0917afa5d8b7098a9044df4dbfa166c23ec293e703f132489146bbdc57083fc 403B / 403B                                                                                                              0.8s
+ => => sha256:e905ecdf6023bc5ecc0c08ad95b3b946340fd38938717e62c49a7df96d214dab 1.21kB / 1.21kB                                                                                                          1.2s
+ => => sha256:66b98279bfb92df7ae2c28fa75e830faa9a7226079ef916d7352d9a64ac35467 1.40kB / 1.40kB                                                                                                          1.1s
+ => => extracting sha256:c62fa01086040cd1f46a1cca2e6d9757c0516e5076b0c47cb8f599f8047a920f                                                                                                               0.5s
+ => => extracting sha256:783efa7200714b88d9642a0b17a3c1b100033df3b8873ec214b388360ec3c8f2                                                                                                               0.0s
+ => => extracting sha256:e9346e20ffd27cbb75c776445a5d69b2624e840e40733b3b7e2f4ab2f2094287                                                                                                               0.0s
+ => => extracting sha256:e0917afa5d8b7098a9044df4dbfa166c23ec293e703f132489146bbdc57083fc                                                                                                               0.0s
+ => => extracting sha256:e905ecdf6023bc5ecc0c08ad95b3b946340fd38938717e62c49a7df96d214dab                                                                                                               0.0s
+ => => extracting sha256:66b98279bfb92df7ae2c28fa75e830faa9a7226079ef916d7352d9a64ac35467                                                                                                               0.0s
+ => [nginx internal] load build context                                                                                                                                                                 0.0s
+ => => transferring context: 1.55kB                                                                                                                                                                     0.0s
+ => [nginx 2/4] RUN apt-get update && apt-get install -y supervisor                                                                                                                                    42.1s
+ => [nginx 3/4] COPY conf.d/ /etc/nginx/conf.d/                                                                                                                                                         0.0s
+ => [nginx 4/4] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf                                                                                                                           0.0s
+ => [nginx] exporting to image                                                                                                                                                                          0.1s
+ => => exporting layers                                                                                                                                                                                 0.1s
+ => => writing image sha256:9c2e98e87edfa86887326e875c7ba210c41194e23a602cbfcfdd8bda7e042aee                                                                                                            0.0s
+ => => naming to docker.io/library/laravel_docker-nginx                                                                                                                                                 0.0s
+ => [nginx] resolving provenance for metadata file                                                                                                                                                      0.0s
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % 
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % 
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % 
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % 
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % docker-compose up -d
+[+] Running 7/7
+ ✔ Network laravel_docker_app-network                                                                                                                        Cr...                                      0.0s 
+ ✔ Volume "laravel_docker_mysql-data"                                                                                                                        Cr...                                      0.0s 
+ ✔ Container mysql                                                                                                                                           Started                                    0.2s 
+ ✔ Container laravel                                                                                                                                         Started                                    0.3s 
+ ✔ Container phpmyadmin                                                                                                                                      Started                                    0.3s 
+ ✔ Container nginx                                                                                                                                           Started                                    0.4s 
+ ! phpmyadmin The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested                                            0.0s 
+medaminebentaieb@MacBook-Pro-Med Laravel_Docker % 
+
+```
+ 
+</details>
 
