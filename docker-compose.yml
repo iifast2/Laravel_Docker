@@ -1,5 +1,4 @@
 # /Users/medaminebentaieb/Docker_files/Laravel_Docker/docker-compose.yml
-# Ensure it looks like the following (remove the 'version' line if present and avoid specifying 'platform'):
 
 services:
   # Nginx Service
@@ -84,18 +83,20 @@ services:
     networks:
       - app-network
 
-  # phpMyAdmin Service
+  # phpMyAdmin Service using linuxserver/phpmyadmin
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
+    image: linuxserver/phpmyadmin:latest
     container_name: phpmyadmin
     restart: unless-stopped
     environment:
-      PMA_HOST: db
-      PMA_USER: ${MYSQL_USER}
-      PMA_PASSWORD: ${MYSQL_PASSWORD}
-      PMA_ARBITRARY: 1
+      PUID: 1000                # Replace with your user ID
+      PGID: 1000                # Replace with your group ID
+      TZ: "Europe/London"       # Replace with your timezone
+      UPLOAD_LIMIT: 100M        # Optional: Set upload limit
     ports:
-      - "8080:80"                              # Access via http://localhost:8080
+      - "8080:80"                # Access via http://localhost:8080
+    volumes:
+      - ./phpmyadmin/config:/config   # Configuration data
     depends_on:
       - db
     networks:
