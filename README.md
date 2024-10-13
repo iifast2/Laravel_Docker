@@ -3,8 +3,57 @@ laravel subdomain solution ( docker desktop )
 
 
 
+<br/><br/><br/><br/>
 
-issue 1 - composer (laravel) - fruitcacke : 
+### 11. Ensure Docker configuration files have correct ownership
+
+```
+sudo chown -R medaminebentaieb:staff /Users/medaminebentaieb/.docker
+```
+
+### Navigate to the main project directory
+```
+cd /Users/medaminebentaieb/Docker_files/Laravel_Docker
+````
+
+### Build and run Docker containers
+```
+docker-compose up -d --build
+```
+
+
+
+<br/>
+
+---
+
+<br/><br/><br/><br/>
+
+
+### 7. Rebuild and Run Docker Containers Without Cache
+
+**1. Navigate to the main project directory**
+```
+cd /Users/medaminebentaieb/Docker_files/Laravel_Docker
+```
+
+**2. Rebuild Docker images without using the cache**
+```
+docker-compose build --no-cache
+```
+
+**3. Start the containers in detached mode**
+```
+docker-compose up -d
+```
+
+<br/>
+
+---
+
+<br/><br/><br/><br/>
+
+### issue 1 - composer (laravel) - fruitcacke : 
 
 ````
 
