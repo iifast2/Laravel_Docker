@@ -1,4 +1,5 @@
 # /Users/medaminebentaieb/Docker_files/Laravel_Docker/docker-compose.yml
+# Ensure it looks like the following (remove the 'version' line if present and avoid specifying 'platform'):
 
 services:
   # Nginx Service
@@ -28,23 +29,18 @@ services:
     container_name: laravel
     restart: unless-stopped
     environment:
-      # Laravel Application Configuration
       APP_NAME: ${APP_NAME}
       APP_ENV: ${APP_ENV}
       APP_DEBUG: ${APP_DEBUG}
       APP_KEY: ${APP_KEY}
       APP_URL: ${APP_URL}
       FRONTEND_URL: ${FRONTEND_URL}
-
-      # Database Configuration
       DB_CONNECTION: mysql
       DB_HOST: db
       DB_PORT: 3306
       DB_DATABASE: ${MYSQL_DATABASE}
       DB_USERNAME: ${MYSQL_USER}
       DB_PASSWORD: ${MYSQL_PASSWORD}
-
-      # Mail Configuration
       MAIL_MAILER: ${MAIL_MAILER}
       MAIL_HOST: ${MAIL_HOST}
       MAIL_PORT: ${MAIL_PORT}
@@ -53,20 +49,14 @@ services:
       MAIL_ENCRYPTION: ${MAIL_ENCRYPTION}
       MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS}
       MAIL_FROM_NAME: "${APP_NAME}"
-
-      # JWT Configuration
       JWT_SECRET: ${JWT_SECRET}
-
-      # Konnect Configuration
       KONNECT_URL: ${KONNECT_URL}
       KONNECT_API_KEY: ${KONNECT_API_KEY}
-
-      # Other Laravel Configurations
       LOG_CHANNEL: stack
       LOG_DEPRECATIONS_CHANNEL: null
       LOG_LEVEL: debug
       BROADCAST_DRIVER: log
-      CACHE_DRIVER: array
+      CACHE_DRIVER: file
       FILESYSTEM_DISK: local
       QUEUE_CONNECTION: sync
       SESSION_DRIVER: file
